@@ -4,68 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semantics html5</title>
+    <link href="css/semantics.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Proper use of html5 semantic markups.</h1>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Proper use of html5 semantic markups.</h1>
+        </header>
 
-    <!--Main nav links to relative internal links only-->
-    <nav>
-        <ul>
-            <li><a href= "#latin-dummy">LINK 1</a></li>
-            <li><a href= "#">LINK 2</a></li>
-            <li><a href= "#">LINK 3</a></li>
-        </ul>
-    </nav>
+        <!--Main nav links to relative internal links only-->
+        <nav>
+            <h2 class=" sr-only">main navigation </h2>
+            <ul>
+                <li><a href= "#junk-text">LINK 1</a></li>
+                <li><a href= "#">LINK 2</a></li>
+                <li><a href= "#">LINK 3</a></li>
+            </ul>
+        </nav>
 
-    <!--Main content of page-->
-    <main>
-        <!-- Grouping content together -->
-        <section id="junk_text">
-            <h2> Junk text from Audi Wiki Page</h2>
-            <p>
-                Audi AG is a German automotive manufacturer of luxury vehicles headquartered in Ingolstadt, Bavaria, Germany.
-                As a subsidiary of its parent company, the Volkswagen Group, Audi produces vehicles in nine production facilities
-                worldwide.
-            </p>
+        <!--Main content of page-->
+        <main>
+            <!-- Grouping content together -->
+            <section id="junk-text">
+                <h2> Junk text from Audi Wiki Page</h2>
+                <p>
+                    Audi AG is a German automotive manufacturer of luxury vehicles headquartered in Ingolstadt, Bavaria, Germany.
+                    As a subsidiary of its parent company, the Volkswagen Group, Audi produces vehicles in nine production facilities
+                    worldwide.
+                </p>
 
-            <p>
-                The origins of the company are complex, dating back to the early 20th century and the initial enterprises (Horch and the Audiwerke)
-                founded by engineer August Horch (1868–1951). Two other manufacturers (DKW and Wanderer) also contributed to the foundation of Auto 
-                Union in 1932. The modern Audi era began in the 1960s, when Auto Union was acquired by Volkswagen from Daimler-Benz.[9] After relaunching 
-                the Audi brand with the 1965 introduction of the Audi F103 series, Volkswagen merged Auto Union with NSU Motorenwerke in 1969, thus 
-                creating the present-day form of the company.
-            </p>
+                <p>
+                    The origins of the company are complex, dating back to the early 20th century and the initial enterprises (Horch and the Audiwerke)
+                    founded by engineer August Horch (1868–1951). Two other manufacturers (DKW and Wanderer) also contributed to the foundation of Auto 
+                    Union in 1932. The modern Audi era began in the 1960s, when Auto Union was acquired by Volkswagen from Daimler-Benz.[9] After relaunching 
+                    the Audi brand with the 1965 introduction of the Audi F103 series, Volkswagen merged Auto Union with NSU Motorenwerke in 1969, thus 
+                    creating the present-day form of the company.
+                </p>
 
-            <!-- informational img -->
-            <figure>
-                <img src=" https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Audi_Typ_E_%281923%29.jpg/1280px-Audi_Typ_E_%281923%29.jpg" alt="old audi">
-                <figcaption> This is an old Audi </figcaption>
+                <!-- informational img -->
+                <figure>
+                    <img src=" https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Audi_Typ_E_%281923%29.jpg/1280px-Audi_Typ_E_%281923%29.jpg" alt="old audi" style="width:900px;height:600px;">
+                    <figcaption> This is an old Audi </figcaption>
 
-            </figure>
+                </figure>
 
-            <aside>
-                <h2> Suplimentary Info</h2>
-                <ul>
-                    <li><a href="#">Information YO!</a></li>
-                </ul>
-            </aside>
-        </section>
-    </main>
+                <aside>
+                    <h2> Suplimentary Info</h2>
+                    <ul>
+                        <li><a href="#">Information YO!</a></li>
+                    </ul>
+                </aside>
+            </section>
+        </main>
 
-    <aside>
-        <h2> social media?</h2>
-        <ul>
-            <li><a href="#">linky</a></li>
-        </ul>
-    </aside>
+        <aside>
+            <h2> social media?</h2>
+            <ul>
+                <li><a href="#">linky</a></li>
+            </ul>
+        </aside>
 
-    <footer>
-        <p>Designed by me</p>
-        <address>email@colorado.edu</address>
-        <small>&copy; 2023</small>
-    </footer>
-    
+        <footer>
+            <p>Designed by me</p>
+            <address>email@colorado.edu</address>
+            <small>&copy; 2023</small>
+        </footer>
+    </div> <!--Closes container div-->
 </body>
 </html>
