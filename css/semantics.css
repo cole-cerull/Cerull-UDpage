@@ -4,7 +4,7 @@
 
 body {
 
-    background-color: #FFFCB1;
+    background-color: #00f2e2;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px
 }
@@ -46,7 +46,7 @@ nav ul li a{
 }
 
 nav ul li a:link{
-    color: white;
+    color: blue;
 }
 
 nav ul li a:hover{
