@@ -1,5 +1,5 @@
 body{
-    background: lightpink;
+    background: rgb(238, 126, 143);
 }
 
 
@@ -11,6 +11,10 @@ body{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+h2 {
+    text-align: center;
 }
 
 h1,
@@ -58,12 +62,12 @@ footer{
     "foot1 foot1 foot1";
 }
 
-header{grid-area: header1; background: goldenrod;}
-nav{grid-area: nav1; background: goldenrod;}
-main{grid-area: main1; background: orange; max-height: 100%;}
-#aside1 {grid-area: aside1; background: red;}
-#aside2 {grid-area: aside2; background: fuchsia;}
-footer {grid-area: foot1; background: silver;}
+header{grid-area: header1; background: 00ffff;}
+nav{grid-area: nav1; background: 00ffff;}
+main{grid-area: main1; background: white; max-height: 100%;}
+#aside1 {grid-area: aside1; background: whitesmoke;}
+#aside2 {grid-area: aside2; background: whitesmoke;}
+footer {grid-area: foot1; background:  00ffff;}
 
 nav ul {
     display: flex;
