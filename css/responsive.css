@@ -1,5 +1,6 @@
 body{
-    background: rgb(238, 126, 143);
+    background: lightslategray;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -21,11 +22,17 @@ h1,
 h2,
 h3{
     padding: .2em 0;
+    font-family: 'Roboto Mono', monospace;
 }
 
 p {
     margin:  1.8em 0;
+    text-indent: 20px;
     line-height: 1.8em;
+}
+
+a {
+    font-family: 'Roboto Mono', monospace;
 }
 
 header,
