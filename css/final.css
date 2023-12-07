@@ -40,7 +40,6 @@ a {
 header,
 nav,
 main,
-aside,
 footer{
     padding: 1.5em;
     border: 1px black solid;
@@ -65,17 +64,17 @@ footer{
     grid-template-areas: 
     "header1 header1 header1"
     "nav1 nav1 nav1"
-    "aside1 main1 aside2"
-    "aside1 main1 aside2"
-    "aside1 main1 aside2"
+    "main1 main1 main1"
+    "main1 main1 main1"
+    "main1 main1 main1"
     "foot1 foot1 foot1";
 }
 
 header{grid-area: header1; background: 00ffff;}
 nav{grid-area: nav1; background: 00ffff;}
 main{grid-area: main1; background: white; max-height: 100%;}
-#aside1 {grid-area: aside1; background: whitesmoke;}
-#aside2 {grid-area: aside2; background: whitesmoke;}
+/* #aside1 {grid-area: aside1; background: whitesmoke;}
+#aside2 {grid-area: aside2; background: whitesmoke;} */
 footer {grid-area: foot1; background:  00ffff;}
 
 nav ul {
@@ -100,7 +99,6 @@ nav ul li {
         "header1 header1"
         "nav1 nav1"
         "main1 main1"
-        "aside1 aside2"
         "foot1 foot1"
     }
 }
@@ -112,8 +110,6 @@ nav ul li {
         grid-template-areas: 
             "header1"
             "main1"
-            "aside1"
-            "aside2"
             "nav1"
             "foot1";
     }
@@ -124,7 +120,7 @@ nav ul li {
     }
     nav ul li a {
         display: block;
-        padding: 10px 5px;
+        padding: 5px 5px;
         margin: 5px;
         border: 1px black solid;
         background: white;
