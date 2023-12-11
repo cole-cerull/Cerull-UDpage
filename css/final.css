@@ -1,12 +1,10 @@
 body{
 
-    background-color: #c5fffb;
+    background-color: #f0f9ff;
     font-family: 'Roboto', sans-serif;
-    font-size: 18px
+    font-size: 20px
 }
 
-
-/*css reset*/
 
 *,
 *::before,
@@ -27,25 +25,42 @@ h3{
     font-family: 'Roboto Mono', monospace;
 }
 
+h1{
+    margin-top: 30px;
+    font-size: 50px;
+}
+
 p {
-    margin:  1.8em 0;
+    margin:  1.5em 0;
     text-indent: 20px;
-    line-height: 1.8em;
+    line-height: 1.5em;
 }
 
 a {
     font-family: 'Roboto Mono', monospace;
+    color: black;
 }
 
-header,
-nav,
-main,
-footer{
-    padding: 1.5em;
-    border: 1px black solid;
-    
+/* header, */
+nav{
+    padding: 1em;
+    background-color: goldenrod;
+    color: #fff; 
+    padding: 1em;
+    font-size: larger;
+    text-align: center;
+    border-radius: 10px;
 }
 
+footer {
+    background-color: goldenrod;
+    color: black; 
+    padding: 1em;
+    font-size: larger;
+    text-align: center;
+    border-radius: 10px;
+    padding-bottom: 1px;
+}
 
 header,
 footer{
@@ -55,32 +70,31 @@ footer{
 .container{
     max-width: 1200px;
     margin: 0 auto;
-    background: rgb(175,222,176);
+    background: #f0f9ff;
     display: grid;
     width: 100vw;
     height: 100vh;
     grid-template-columns: 
-    1fr     2fr     1fr;
+    1fr;
     grid-template-areas: 
-    "header1 header1 header1"
-    "nav1 nav1 nav1"
-    "main1 main1 main1"
-    "main1 main1 main1"
-    "main1 main1 main1"
-    "foot1 foot1 foot1";
+    "header1 "
+    "nav1 "
+    "main1 "
+    "main1 "
+    "main1 "
+    "foot1 ";
 }
 
 header{grid-area: header1; background: 00ffff;}
 nav{grid-area: nav1; background: 00ffff;}
-main{grid-area: main1; background: white; max-height: 100%;}
-/* #aside1 {grid-area: aside1; background: whitesmoke;}
-#aside2 {grid-area: aside2; background: whitesmoke;} */
+main{grid-area: main1; background: #f0f9ff; max-height: 100%;}
 footer {grid-area: foot1; background:  00ffff;}
 
 nav ul {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
+    font-size: larger;
 }
 
 nav ul li {
@@ -88,18 +102,18 @@ nav ul li {
 }
 
 @media screen 
- and (min-width: 641px)
+ and (min-width: 640px)
  and (max-width: 900px){
 
     .container{
         grid-template-columns:
-            1fr 1fr;
+            1fr ;
 
         grid-template-areas:
-        "header1 header1"
-        "nav1 nav1"
-        "main1 main1"
-        "foot1 foot1"
+        "header1 "
+        "nav1 "
+        "main1 "
+        "foot1 "
     }
 }
 
@@ -122,8 +136,63 @@ nav ul li {
         display: block;
         padding: 5px 5px;
         margin: 5px;
-        border: 1px black solid;
-        background: white;
+        border: 1px white solid;
+        background: blue;
     }
 }
 
+img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* STUFF FOR DROP DOWN IS BELOW */
+
+.info-section {
+    padding: 20px;
+}
+
+.dropdown {
+    margin-bottom: 10px;
+}
+
+.dropdown button {
+    background-color: goldenrod;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* STUFF FOR DROP DOWN IS ABOVE */
+
+.small-text {
+    font-size: 12px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.side-by-side-images {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.side-by-side-images img {
+    margin-right: 10px;
+}

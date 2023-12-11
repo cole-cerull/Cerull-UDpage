@@ -1,6 +1,6 @@
 body{
 
-    background-color: #c5fffb;
+    background-color: #c1e4ff;
     font-family: 'Roboto', sans-serif;
     font-size: 18px
 }
@@ -56,7 +56,8 @@ footer{
 .container{
     max-width: 1200px;
     margin: 0 auto;
-    background: rgb(175,222,176);
+    background: #c1e4ff;
+    ;
     display: grid;
     width: 100vw;
     height: 100vh;

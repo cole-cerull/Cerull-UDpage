@@ -15,30 +15,110 @@
 
 <div class="container">
   <header>
-    <h1 >Accesible Website's, Whats that??</h1>
+    <h1 >Universal Design, Whats that??</h1>
+    <img src = "media/banner.png" alt="photo of people with varying abilities together." >
+    
   </header>
   <nav>
     
     <ul>
-        <li><a href="why.html">Why</a></li>
-        <li><a href="what.html">What</a></li>
-        <li><a href="how.html">How</a></li>
+      <li><a href="final-home.html">What</a></li>
+      <li><a href="why.html">Why</a></li>  
+      <li><a href="how.html">How</a></li>
     </ul>
   </nav>
   <main>
     <section>
+      <h2>What is it?</h2>
         
-        <h2>Introduction</h2>
-        <p>In this main page section I will write a brief introduction talking about accesability breifly and giving instructions on how this website is layed out so they can use it to learn</p>
+        <p>Universal design in the context of digital content refers to the inclusive and accesable design of websites, applications, and other online materials to ensure they are usable for a diverse
+          audience of people, including those with varying abilities and disabilities. The goal is to create content that's information is equally accessable and functionallity that works for all.
+        </p>
+
+        
+
+        <p>
+          This approach involves considerations such as alternative test for images so that those with vision imparments can still understand what is being shown, navigation structures that are easy to understand
+          and navigate, keyboard navigation ability, and ensuring assistive technology such as screen readers are compatable. 
+        </p>
+
+        <p>
+          Universal design aims to break barriers that might hold individuals back from accessing content. Overall creating an inclusive online enviornment where all users, no matter a users needs or limitations
+          can participate and engage seamlessly with content.
+        </p>
+
+        <img src="/media/digital-media.jpg" alt="a collage of different symbols that represent a variety of types of digital media" style="width: 500px;height: 500px;" class="center">
 
     </section>
+
+    <section class="info-section">
+      <h2>The 7 Principles of Universal Design</h2>
+      <div class="dropdown">
+          <button onclick="toggleDropdown('dropdownContent1')">Principle 1: Equitable Use</button>
+          <div id="dropdownContent1" class="dropdown-content">
+              <!-- Content for Dropdown 1 -->
+              <p>The design is useful and marketable to people with diverse abilities.</p>
+          </div>
+      </div>
+      <div class="dropdown">
+          <button onclick="toggleDropdown('dropdownContent2')">Principle 2: Flexibility in Use</button>
+          <div id="dropdownContent2" class="dropdown-content">
+              <!-- Content for Dropdown 2 -->
+              <p>The design accommodates a wide range of individual preferences and abilities.</p>
+          </div>
+      </div>
+      <div class="dropdown">
+        <button onclick="toggleDropdown('dropdownContent3')">Principle 3: Simple and Intuitive Use</button>
+        <div id="dropdownContent3" class="dropdown-content">
+            <!-- Content for Dropdown 2 -->
+            <p>Use of the design is easy to understand, regardless of the user's experience, knowledge, language skills, or current concentration level.</p>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleDropdown('dropdownContent4')">Principle 4: Perceptible Information</button>
+        <div id="dropdownContent4" class="dropdown-content">
+            <!-- Content for Dropdown 2 -->
+            <p>The design communicates necessary information effectively to the user, regardless of ambient conditions or the user's sensory abilities.</p>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleDropdown('dropdownContent5')">Principle 5: Tolerance for Error</button>
+        <div id="dropdownContent5" class="dropdown-content">
+            <!-- Content for Dropdown 2 -->
+            <p>The design minimizes hazards and the adverse consequences of accidental or unintended actions.</p>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleDropdown('dropdownContent6')">Principle 6: Low Physical Effort</button>
+        <div id="dropdownContent6" class="dropdown-content">
+            <!-- Content for Dropdown 2 -->
+            <p>The design can be used efficiently and comfortably and with a minimum of fatigue.</p>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleDropdown('dropdownContent7')">Principle 7: Size and Space for Approach and Use</button>
+        <div id="dropdownContent7" class="dropdown-content">
+            <!-- Content for Dropdown 2 -->
+            <p>Appropriate size and space is provided for approach, reach, manipulation, and use regardless of user's body size, posture, or mobility.</p>
+        </div>
+    </div>
+    <p class="small-text">
+      These principles are from 
+      <cite><a href="https://universaldesign.ie/about-universal-design/the-7-principles" target="_blank" rel="noopener noreferrer">Centre for Excellence in Universal Design</a></cite>
+      .
+      
+    </p>
+      
+    </section>
+
   </main>
 
   <footer>
-    <small> Designed by Cole Cerull</small>
+    <small> Designed by Cole Cerull</small> 
 
   </footer>
 
 </div> <!-- end container -->
+<script src="script.js"></script>
 </body>
 </html>
